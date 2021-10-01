@@ -36,13 +36,13 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100vh;
     background: var(--pink-color);
     font-family: var(--font-family);
 }
 
 .main {
-    height: 100%;
+    min-height: 100vh;
     /* width: 100%; */
     background-image: url(images/bg-intro-desktop.png);
     background-repeat: no-repeat;
@@ -163,10 +163,11 @@ button {
     font-style: medium;
 }
 
-.form span {
+a {
     color: var(--pink-color);
     font-style: bold;
     font-weight: var(--big-font-weight);
+    text-decoration: none;
 }
 
 button:hover {
@@ -218,10 +219,10 @@ small {
     font-size: var(--form-font-size);
     line-height: var(--normal-line-height);
     letter-spacing: var(--form-letter-spacing);
-    color: #FF7979;
+    color: var(--pink-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     body, html {
         text-align: center;
@@ -260,6 +261,10 @@ small {
     .commercial {
         margin-bottom: 42px;
         padding: 18px 66px;
+    }
+
+    .form {
+        padding: 24px;
     }
 
     .form p {
